@@ -1,22 +1,120 @@
-(module "5000" (layer F.Cu)
-  (descr "5000")
-  (tags "Test Point")
-  (fp_text reference TP** (at -0.392 -1.99) (layer F.SilkS)
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
-  )
-  (fp_text user %R (at -0.392 -1.99) (layer F.Fab)
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
-  )
-  (fp_text value "5000" (at -0.392 -1.99) (layer F.SilkS) hide
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
-  )
-  (fp_circle (center 0 0) (end 0 1.27) (layer F.Fab) (width 0.2))
-  (fp_circle (center 0 0) (end 0 1.27) (layer F.Fab) (width 0.2))
-  (fp_circle (center 0 0) (end 0 1.27) (layer F.SilkS) (width 0.2))
-  (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 1.02) (layers *.Cu *.Mask))
-  (model 5001.stp
-    (at (xyz 0 0 0.064960628982604))
-    (scale (xyz 1 1 1))
-    (rotate (xyz -90 0 0))
-  )
+(footprint "5000"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "5000")
+	(tags "Test Point")
+	(property "Reference" "TP**"
+		(at -0.392 -1.99 0)
+		(layer "F.SilkS")
+		(uuid "2b16491d-135f-44da-9a06-7756e0cf3426")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "5000"
+		(at -0.392 -1.99 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6f4c3253-b5f9-4833-a876-1d0857d01609")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "952f8dc0-51ca-4ee8-acc7-4f9fe8b6f303")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bd081e5c-75ea-4e8f-ba6e-90f3bf16ad6d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_circle
+		(center 0 0)
+		(end 0 1.27)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "6ccea7ab-a7cd-463c-bf9c-513c9b5db6ce")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0 1.27)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "2960fa52-f6d7-4439-8e5c-f9ce02626d60")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0 1.27)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "5a7b6e4a-c2da-422f-a793-b03a99b6591d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.392 -1.99 0)
+		(layer "F.Fab")
+		(uuid "bf40d6a2-661a-4ee3-8cc4-0475977f4fd6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4b2560e2-4d1f-4c78-aeee-1402bf5a6a98")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/library/3dmodels/5001.stp"
+		(offset
+			(xyz 0 0 1.649999951)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
 )
